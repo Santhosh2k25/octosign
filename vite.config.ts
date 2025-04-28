@@ -13,14 +13,9 @@ export default defineConfig({
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'utils-vendor': ['date-fns', 'lucide-react', 'clsx', 'tailwind-merge'],
+          'utils-vendor': ['date-fns', 'lucide-react'],
         },
       },
-    },
-  },
-  resolve: {
-    alias: {
-      'node-fetch': 'isomorphic-fetch',
     },
   },
   base: '/',
